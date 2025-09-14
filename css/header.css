@@ -1,11 +1,12 @@
 .header {
-  background-color: rgba(55, 50, 50, 0.8);
+  background-color: rgba(30, 30, 30, 0.8);
   backdrop-filter: blur(10px);
   padding: 1rem 0;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 50;
+  border-bottom: 1px solid var(--border-color); 
 }
 
 .navbar {
@@ -36,8 +37,24 @@
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 5px;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
 }
 
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--primary-orange);
@@ -47,7 +64,7 @@
   display: block; 
   background: none;
   border: none;
-  color: var(--text-light);
+  color: var(--text-primary);
   cursor: pointer;
 }
 
@@ -64,16 +81,20 @@
 }
 
 .mobile-nav a {
-  color: var(--text-light);
+  color: var(--text-primary);
   text-decoration: none;
   font-size: 1.1rem;
   display: block;
+  padding: 0.5 rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .mobile-nav a:hover,
 .mobile-nav a.active {
   color: var(--primary-orange);
+  background-color: rgba(219,119 ,6, 0.1);
 }
-#mobile-menu-toggle:checked ~ #mobile-nav-menu {
+#mobile-menu-toggle:checked ~ .mobile-nav-menu {
   display: block;
 }

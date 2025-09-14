@@ -1,28 +1,55 @@
-
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 .reservation-table {
   max-width: 600px;
   margin: 0 auto;
-  background-color: var(--bg-card);
+  background-color: var(--background-light);
   padding: 2rem;
   border-radius: 8px;
+  border: 1px solid var(--border-color);
 }
 
 .group {
   margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
 }
+.group:nth-child(1) { animation-delay: 0.1s; }
+.group:nth-child(2) { animation-delay: 0.2s; }
+.group:nth-child(3) { animation-delay: 0.3s; }
+.group:nth-child(4) { animation-delay: 0.4s; }
+.group:nth-child(5) { animation-delay: 0.5s; }
+.group:nth-child(6) { animation-delay: 0.6s; }
+.reservation-table .button { animation-delay: 0.7s; }
 
 .group label {
   display: block;
   margin-bottom: 0.5rem;
   color: var(--text-muted);
+  font-weight: 500;
 }
 
 .group input,
 .group select {
   width: 100%;
   padding: 0.75rem;
-  background-color: var(--bg-dark);
-  border: 1px solid #374151;
-  color: var(--text-light);
-  border-radius: 8px;
+  background-color: var(--background-dark);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.group input:focus,
+.group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.3);
 }
