@@ -1,0 +1,79 @@
+.header {
+  background-color: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--primary-orange);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: none; 
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary-orange);
+}
+
+.mobile-menu-button {
+  display: block; 
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+  list-style: none;
+  background-color: var(--bg-card);
+  padding: 1rem;
+  text-align: center;
+}
+
+.mobile-nav li {
+  margin-bottom: 1rem;
+}
+
+.mobile-nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+}
+
+.mobile-nav a:hover,
+.mobile-nav a.active {
+  color: var(--primary-orange);
+}
+#mobile-menu-toggle:checked ~ #mobile-nav-menu {
+  display: block;
+}

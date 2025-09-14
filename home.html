@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirvana Restro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/reservation.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+</head>
+
+<body>
+
+<header class="header">
+<input type="checkbox" id="mobile-menu-toggle" style="display:none;">
+<div class="container navbar">
+<a href="#home" class="logo">NIRVANA</a>
+<nav>
+<label for="mobile-menu-toggle" class="mobile-menu-button">
+<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" style="height: 1.5rem; width: 1.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+</svg>
+</label>
+<ul class="nav-links">
+<li><a href="#home" class="active">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#reservation">Reservation</a></li>
+<li><a href="#gallery">Gallery</a></li>
+</ul>
+</nav>
+</div>
+
+<ul id="mobile-nav-menu" class="mobile-nav">
+<li><a href="#home" class="active">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#reservation">Reservation</a></li>
+<li><a href="#gallery">Gallery</a></li>
+</ul> 
+
+</header>
+<main>
+<section id="home">
+<div class="hero-content">
+<h1>Welcome to Nirvana</h1>
+<p>Experience a culinary journey where every dish tells a story.</p>
+<p>A taste you'll remember forever.</p>
+<a href="#reservation" class="button">Book a Table</a>
+</div>
+</section>
+<section id="about" class="container">
+<h2 class="section-title">Our Story</h2>
+<p class="section-subtitle">Founded with a passion for authentic flavors and warm hospitality.</p>
+<div class="about-grid">
+<div class="about-images">
+<img src="images/chef1.jpg" alt="Chef1:MALE">
+<img src="images/chef2.jpg" alt="Chef2:FEMALE">
+</div>
+<div>
+<h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem;">Crafting Memories, One Dish at a Time</h3>
+<p style="color: var(--text-muted); margin-bottom: 1rem;">At Nirvana, we believe that dining is more than just food; it's an experience. Our chefs use the freshest local ingredients to create innovative dishes that honor tradition while delighting the senses. Join us for an unforgettable meal in a setting that feels like home.</p>
+<a href="#menu" class="button">Explore Menu</a>
+</div>
+</div>
+</section>
+<section id="menu" class="container">
+<h2 class="section-title">POPULAR DISHES</h2>
+<p class="section-subtitle">A selection of our most loved dishes, crafted with passion and love by our chefs.</p>
+<div class="menu-grid">
+<div class="menu-card">
+<img src="images/salad.jpg" alt="Salad">
+<div class="menu-card-content">
+<h3>Fresh Salad</h3>
+<p>A mix of fresh greens, cherry tomatoes, avocado, boiled eggs, tossed tofu, onions and cabbage.</p>
+<div class="price">$5.65</div>
+<a href="#" class="button">Order Now</a>
+</div>
+</div>
+<div class="menu-card">
+<img src="images/hamburger.jpg" alt="Burger">
+<div class="menu-card-content">
+<h3>Signature Burger</h3>
+<p>Juicy prime patty with aged cheddar on a brioche bun loaded with mayo and veggies.</p>
+<div class="price">$2.93</div>
+<a href="#" class="button">Order Now</a>
+</div>
+</div>
+<div class="menu-card">
+<img src="images/salmon.jpg" alt="Salmon">
+<div class="menu-card-content">
+<h3>Grilled Salmon</h3>
+<p>Crispy skin salmon served with complementary 30ml red wine and lemon butter sauce.</p>
+<div class="price">$6.79</div>
+<a href="#" class="button">Order Now</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="reservation" class="container">
+<h2 class="section-title">Make a Reservation</h2>
+<p class="section-subtitle">Secure your table for an unforgettable dining experience.</p>
+<form class="reservation-form">
+<div class="form-group">
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label for="name">Contact</label>
+<input type="number" id="number" name="number" required>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+<label for="date">Date</label>
+<input type="date" id="date" name="date" required>
+</div>
+<div class="form-group">
+<label for="time">Time</label>
+<input type="time" id="time" name="time" required>
+</div>
+<div class="form-group">
+<label for="guests">Number of Guests</label>
+<select id="guests" name="guests">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>More than 4</option>
+</select>
+</div>
+<button type="submit" class="button" style="width:100%;"> Reserve a Table</button>
+</form>
+
+</section>
+<section id="gallery" class="container">
+<h2 class="section-title">GALLERY</h2>
+<p class="section-subtitle">Let's dive into the glimpse of ambience, events, and moments at Nirvana.</p>
+<div class="gallery-grid">
+<img src="images/image1.png" alt="bar section">
+<img src="images/image2.jpg" alt="concert">
+<img src="images/image3.jpg" alt="family gathering">
+<img src="images/image4.jpg" alt="platter">
+<img src="images/image5.jpg" alt="cuisine">
+<img src="images/image6.jpg" alt="rooftop">
+<img src="images/image7.jpg" alt="interior">
+<img src="images/image8.jpg" alt="lightning">
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container">
+<a href="#home" class="logo" style="display: block; margin-bottom: 1rem">NIRVANA</a>
+<p>&copy; 2025 Nirvana. All Rights Reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>
+
