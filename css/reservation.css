@@ -1,4 +1,5 @@
-.reservation-form {
+
+.reservation-table {
   max-width: 600px;
   margin: 0 auto;
   background-color: var(--bg-card);
@@ -6,18 +7,18 @@
   border-radius: 8px;
 }
 
-.form-group {
+.group {
   margin-bottom: 1.5rem;
 }
 
-.form-group label {
+.group label {
   display: block;
   margin-bottom: 0.5rem;
   color: var(--text-muted);
 }
 
-.form-group input,
-.form-group select {
+.group input,
+.group select {
   width: 100%;
   padding: 0.75rem;
   background-color: var(--bg-dark);

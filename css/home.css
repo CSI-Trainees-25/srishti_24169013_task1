@@ -9,6 +9,7 @@
   text-align: center;
   color: white;
   padding: 0 1rem;
+  background-attachment: fixed;
 }
 
 .hero-content h1 {
@@ -23,8 +24,8 @@
 }
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -34,9 +35,12 @@
   gap: 1rem;
 }
 
-.about-images img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.about-images img:first-child {
   border-radius: 8px;
+  transform: translateY(20px);
+}
+
+.about-images img:last-child {
+  border-radius: 8px;
+  transform: translateY(-20px);
 }

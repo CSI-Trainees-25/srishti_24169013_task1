@@ -46,37 +46,55 @@
 
 </header>
 <main>
-<section id="home">
-<div class="hero-content">
-<h1>Welcome to Nirvana</h1>
-<p>Experience a culinary journey where every dish tells a story.</p>
-<p>A taste you'll remember forever.</p>
-<a href="reservation.html" class="button">Book a Table</a>
-</div>
-</section>
-<section id="about" class="container">
-<h2 class="section-title">Our Story</h2>
-<p class="section-subtitle">Founded with a passion for authentic flavors and warm hospitality.</p>
-<div class="about-grid">
-<div class="about-images">
-<img src="images/chef1.jpg" alt="Chef1:MALE">
-<img src="images/chef2.jpg" alt="Chef2:FEMALE">
-</div>
-<div>
-<h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem;">Crafting Memories, One Dish at a Time</h3>
-<p style="color: var(--text-muted); margin-bottom: 1rem;">At Nirvana, we believe that dining is more than just food; it's an experience. Our chefs use the freshest local ingredients to create innovative dishes that honor tradition while delighting the senses. Join us for an unforgettable meal in a setting that feels like home.</p>
-<a href="menu.html" class="button">Explore Menu</a>
-</div>
-</div>
-</section>
-</main>
-<footer class="footer">
-<div class="container">
-<a href="home.html" class="logo" style="display: block; margin-bottom: 1rem">NIRVANA</a>
-<p>&copy; 2025 Nirvana. All Rights Reserved.</p>
-</div>
-</footer>
-
-</body>
-</html>
-
+  
+  <section id="reservation" class="container">
+  <h2 class="section-title">Make a Reservation</h2>
+  <p class="section-subtitle">Secure your table for an unforgettable dining experience.</p>
+  
+  <form class="reservation-table">
+  <div class="group">
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" required>
+  </div>
+  <div class="group">
+  <label for="contact">Contact</label>
+  <input type="number" id="number" name="number" required>
+  </div>
+  <div class="group">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+  </div>
+  <div class="group">
+  <label for="date">Date</label>
+  <input type="date" id="date" name="date" required>
+  </div>
+  <div class="group">
+  <label for="time">Time</label>
+  <input type="time" id="time" name="time" required>
+  </div>
+  <div class="group">
+  <label for="guests">Number of Guests</label>
+  <select id="guests" name="guests">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>More than 4</option>
+  </select>
+  </div>
+  <button class="button">Reserve a Table</button>
+  </form>
+  
+  </section>
+  </main>
+ 
+  <footer class="footer">
+    <div class="container">
+    <a href="home.html" class="logo" style="display: block; margin-bottom: 1rem">NIRVANA</a>
+    <p>&copy; 2025 Nirvana. All Rights Reserved.</p>
+    </div>
+    </footer>
+    
+    </body>
+    </html>
+  
